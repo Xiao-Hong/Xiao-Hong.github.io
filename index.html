@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Flash ActionScript3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/07/Flash ActionScript3/" class="article-date">
+  <time datetime="2017-12-07T04:07:05.274Z" itemprop="datePublished">2017-12-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Flash-ActionScript3"><a href="#Flash-ActionScript3" class="headerlink" title="Flash ActionScript3"></a>Flash ActionScript3</h1><hr>
+<h2 id="一-开发环境"><a href="#一-开发环境" class="headerlink" title="一.开发环境"></a>一.开发环境</h2><h4 id="1-时间轴中写入代码"><a href="#1-时间轴中写入代码" class="headerlink" title="1.时间轴中写入代码"></a>1.时间轴中写入代码</h4><ul>
+<li>在fla文件中，选中帧，按F9弹出动作面板</li>
+<li>F2随时打开输出面板或关闭</li>
+<li>Ctrl+Enter  生成.swf文件</li>
+</ul>
+<h4 id="2-文档类新特色和fla文件绑定"><a href="#2-文档类新特色和fla文件绑定" class="headerlink" title="2.文档类新特色和fla文件绑定"></a>2.文档类新特色和fla文件绑定</h4><ul>
+<li>在同一个目录放fla文件和as文件，在fla“文档类”中输入as的类名，ctrl+enter生成与fla同名的.swf文件</li>
+</ul>
+<h4 id="3-flex-builder创建项目"><a href="#3-flex-builder创建项目" class="headerlink" title="3.flex builder创建项目"></a>3.flex builder创建项目</h4><ul>
+<li>新建ActionScript项目，自动生成与项目名相同的as文件，理解为flex编译器在编译时自动生成一个空的fla文件和这个默认程序类绑定，F11进行调试。</li>
+</ul>
+<hr>
+<h2 id="二-ActionScript3语言基本元素"><a href="#二-ActionScript3语言基本元素" class="headerlink" title="二.ActionScript3语言基本元素"></a>二.ActionScript3语言基本元素</h2><h4 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1.数据类型"></a>1.数据类型</h4><ol>
+<li>预定义的基元数据类型包括 Boolean、int、Number、String、uint。</li>
+<li>Boolean 数据类型包含两个值：true 和 false。对于 Boolean 类型的变量，其它任何值都是无效的。已经声明但尚未初始化的布尔变量的默认值是 false。</li>
+<li>int 数据类型在内部存储为 32 位整数。</li>
+<li>Number 数据类型可以表示整数、无符号整数和浮点数，64位浮点值。</li>
+<li>String 数据类型表示一个 16 位字符的序列。</li>
+<li>uint 数据类型在内部存储为 32 位无符号整数。</li>
+<li><a href="http://help.adobe.com/zh_CN/ActionScript/3.0_ProgrammingAS3/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f88.html" target="_blank" rel="noopener">具体详细</a></li>
+</ol>
+<h4 id="2-变量的声明和使用"><a href="#2-变量的声明和使用" class="headerlink" title="2.变量的声明和使用"></a>2.变量的声明和使用</h4><ul>
+<li>在ActionScript3中声明格式中:<ol>
+<li>var 变量名:数据类型;</li>
+<li>var 变量名:数据类型 =  值;</li>
+<li><strong>注意:</strong><ul>
+<li>声明变量时如果不加上数据类型，那么Actionscript2中会默认对象为Object，但是ActionScript3不加数据类型的声明，那么该变量就被归为未声明类型(untyped)。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>变量命名规则<ol>
+<li>用有含义英文单词的做变量名</li>
+<li>变量名采用骆驼式命名法，短而清晰，开头首字母小写，第二个首字母大写</li>
+<li>尽量避免数字编号</li>
+</ol>
+</li>
+</ul>
+<h4 id="3-变量，-重要"><a href="#3-变量，-重要" class="headerlink" title="3.*变量，*重要"></a>3.*变量，*重要</h4><ol>
+<li>引用类型:访问对象时，我们不是去访问内存中的数据，而是去通过引用访问。</li>
+<li>基元数据类型包括 Boolean、int、Number、String、uint。那么剩下的数据类型全部都是引用类型。</li>
+<li>ActionScript中变量持有引用，指向要操作的数据对象。和java不同，ActionScript3变量本身是不能持有值的。在ActionScript3中，值类型变量持有的是指向值类型数据的引用；引用类型变量持有的是指向引用类型数据的引用。</li>
+</ol>
+<h4 id="4-深入讨论"><a href="#4-深入讨论" class="headerlink" title="4.深入讨论*"></a>4.深入讨论*</h4><ul>
+<li>在Java中，值类型并不是以对象形式存在的。值类型的变量，存储的不是引用，而是直接容纳了具体的值，在ActionScript3中，本质中，值类型仍然是对象。</li>
+<li>值类型是一种特殊的对像叫不变对象，一旦虚拟机发现指向一个不变队形的引用要改变该不变对象的值，就会另行创建一个新的不变对象来接受新的值。</li>
+</ul>
+<h4 id="5-使用const声明常量"><a href="#5-使用const声明常量" class="headerlink" title="5.使用const声明常量"></a>5.使用const声明常量</h4><h4 id="6-重要-使用int，uint，Number注意事项"><a href="#6-重要-使用int，uint，Number注意事项" class="headerlink" title="6.重要:使用int，uint，Number注意事项"></a>6.重要:使用int，uint，Number注意事项</h4><ol>
+<li>能用整数值时优先使用int和uint。整数值有正负之分时，用int。只处理正整数，优先使用uint。处理和颜色相关的数值时，使用uint。<br>碰到或可能碰到小数点时用Number。</li>
+<li>要当心整型数值的边界。</li>
+<li>小数相加不一定得到整数</li>
+<li>不要让数值差距过大的浮点数相加减，结果可能有偏差。</li>
+</ol>
+<h4 id="7-字符串"><a href="#7-字符串" class="headerlink" title="7.字符串"></a>7.字符串</h4><ul>
+<li>转义用“\”，“\n”表示换行，”\r”表示回车，“\t”表示制表</li>
+</ul>
+<h4 id="8-数组"><a href="#8-数组" class="headerlink" title="8.数组"></a>8.数组</h4><ul>
+<li>初始化默认值为null。</li>
+</ul>
+<h4 id="9-object及关联数组"><a href="#9-object及关联数组" class="headerlink" title="9.object及关联数组"></a>9.object及关联数组</h4><ul>
+<li>Array也是数据集合的一种，通过索引值来访问array的各个成员。object则是通过字符串访问成员。</li>
+<li>Object的成员有两种:一种是属性，用来存放各种数据，一种是方法存放函数对象。</li>
+</ul>
+<h4 id="10-变量的默认值"><a href="#10-变量的默认值" class="headerlink" title="10.变量的默认值"></a>10.变量的默认值</h4><ul>
+<li>int：0</li>
+<li>uint：0</li>
+<li>Number：NaN</li>
+<li>String：null</li>
+<li>Boolean：false</li>
+<li>Array：null</li>
+<li>Object：null</li>
+<li>未声明类型 undefined</li>
+</ul>
+<h4 id="11-关系运算符-全等运算符（-）和等于运算符（-）"><a href="#11-关系运算符-全等运算符（-）和等于运算符（-）" class="headerlink" title="11.关系运算符 - 全等运算符（\=\==）和等于运算符（==）"></a>11.关系运算符 - 全等运算符（\=\==）和等于运算符（==）</h4><ul>
+<li>全等运算符（===）和等于运算符（\==）的差别，如果等于运算符两边的基元数据类型不相同，那么会执行类型转换后，在做比较</li>
+<li><strong>注意:</strong><ol>
+<li>如果int，uint，Number类型数值相同，那么全等运算符也会认为相同。</li>
+<li>当两边运算对象的值都是Number类型，且值为NaN时，全等和等于运算符都判断false。</li>
+<li>如果两边运算的对象的值是undefined和null时，等于运算符判断为相等，返回true，而全等运算符判断为不等，返回false。</li>
+<li>ActionScript2中和java采用引用相同来判断判断运算对象是否相等，所以等于运算符只能返回false，ActionScript3则不同返回true。</li>
+</ol>
+</li>
+</ul>
+<h4 id="12-关系运算符（-gt-lt-gt-lt-）"><a href="#12-关系运算符（-gt-lt-gt-lt-）" class="headerlink" title="12.关系运算符（&gt;,&lt;,&gt;=,&lt;=）"></a>12.关系运算符（&gt;,&lt;,&gt;=,&lt;=）</h4><ul>
+<li>当运算符一边的运算对象是数值，另一边非数值，非数值运算对象会尽量转为数值，再进行比较。</li>
+</ul>
+<h4 id="13-逻辑运算符（-amp-amp-）"><a href="#13-逻辑运算符（-amp-amp-）" class="headerlink" title="13.逻辑运算符（&amp;&amp;,||）"></a>13.逻辑运算符（&amp;&amp;,||）</h4><ul>
+<li>当使用”&amp;&amp;”,”||”,都是如果一个表达式为true，则不会执行第二个表达式。</li>
+</ul>
+<h4 id="14-typeof、is、as"><a href="#14-typeof、is、as" class="headerlink" title="14.typeof、is、as"></a>14.typeof、is、as</h4><ol>
+<li>typeof 用字符串形式返回对象的类型<br><code>trace (typeof 10);   //输出number</code></li>
+<li>is，as<br><code>trace (9 is Number);  //输出:true</code><br><code>trace (9 as Number); //输出9</code><br><code>trace (9 as Array); //输出null</code></li>
+</ol>
+<h4 id="15-in"><a href="#15-in" class="headerlink" title="15.*in"></a>15.*in</h4><ul>
+<li>in关键字用来判断一个对象是否作为另一个对象键或索引</li>
+</ul>
+<h4 id="16-delete"><a href="#16-delete" class="headerlink" title="16.delete"></a>16.delete</h4><ul>
+<li>delete关键字删除对象任意一个实例属性，</li>
+<li>将一个属性所持有的引用删除，将null赋值给该属性即可。</li>
+</ul>
+<h4 id="17-关键字P44"><a href="#17-关键字P44" class="headerlink" title="17.关键字P44"></a>17.关键字P44</h4><hr>
+<h2 id="三、流程控制控制"><a href="#三、流程控制控制" class="headerlink" title="三、流程控制控制"></a>三、流程控制控制</h2><h4 id="1-循环"><a href="#1-循环" class="headerlink" title="1.循环"></a>1.循环</h4><ol>
+<li>for…in需要使用键的信息，集合成员需要通过数组访问符（[ ]）加上这个键值才能访问；</li>
+<li>for each…in枚举变量k则直接代表集合的成员</li>
+</ol>
+<h4 id="2-函数表达式定义法"><a href="#2-函数表达式定义法" class="headerlink" title="2.函数表达式定义法"></a>2.函数表达式定义法</h4><ul>
+<li>相当于匿名内部类<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var 函数名:Function = function   (参数1：参数类型 ，  参数2：参数类型 ...)  ：  返回值类型</span><br><span class="line">&#123;</span><br><span class="line">   //函数内部语句</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="3-两种定义法的区别和选择"><a href="#3-两种定义法的区别和选择" class="headerlink" title="3.*两种定义法的区别和选择"></a>3.*两种定义法的区别和选择</h4><ul>
+<li>函数语句定义法定义的函数在编译时会被提升到最前面，函数表达式定义法只能先定义后使用，只有定义后面的语句才可以调用成功。</li>
+</ul>
+<h4 id="4-参数"><a href="#4-参数" class="headerlink" title="4.参数"></a>4.参数</h4><ol>
+<li>在ActionScript3中所有的参数都是按引用传入的。只不过，基元数据类型是不变对象，传值和传引用效果一样，所以，如果参数是基元数据类型，那么可以看成是传值，如果参数不是基元数据类型，那么就是传引用。</li>
+<li>访问的参数信息在arguments对象中。使用..(rest)关键字当参数</li>
+</ol>
+<hr>
+<h2 id="四、函数高级使用技巧"><a href="#四、函数高级使用技巧" class="headerlink" title="四、函数高级使用技巧"></a>四、函数高级使用技巧</h2><h4 id="1-技巧"><a href="#1-技巧" class="headerlink" title="1.技巧"></a>1.技巧</h4><ol>
+<li>定义一个var 函数名:Function;    来代理函数对象</li>
+<li>建立数组，将函数放入数组</li>
+<li>利用switch判断内容</li>
+<li>包围函数（function(){})的第一对括号向脚本返回未命名的函数，随后一对空括号立即执行返回的未命名函数，括号内为匿名函数的参数。</li>
+</ol>
+<hr>
+<h2 id="五、类和对象-从定义到原理"><a href="#五、类和对象-从定义到原理" class="headerlink" title="五、类和对象-从定义到原理"></a>五、类和对象-从定义到原理</h2><h4 id="1-实例属性和实例方法"><a href="#1-实例属性和实例方法" class="headerlink" title="1.实例属性和实例方法"></a>1.实例属性和实例方法</h4><ul>
+<li>实例名 [“属性的名字”]</li>
+<li>实例名 [“方法的名字”] (参数…)</li>
+</ul>
+<h4 id="2-静态属性和静态方法"><a href="#2-静态属性和静态方法" class="headerlink" title="2.静态属性和静态方法"></a>2.静态属性和静态方法</h4><ul>
+<li>访问控制，应当加在static关键字之前。如果不加访问控制，默认为internal。</li>
+<li>如果声明为常量，则用static和const，并且声明时必须赋值，否则报错。</li>
+</ul>
+<h4 id="3-this关键字"><a href="#3-this关键字" class="headerlink" title="3.this关键字"></a>3.this关键字</h4><ol>
+<li>this关键字将各实例属性和方法绑定在了当前对象中。</li>
+<li>向第三方提供对象自身的引用。</li>
+<li>与return结合，在类方法中返回自身的引用。</li>
+<li>和局部变量、方法参数、静态属性同名时，加上this关键字明确指定使用实例属性，如果不加，按局部变量-&gt;方法参数-&gt;实例属性-&gt;静态属性的顺序选择一个</li>
+</ol>
+<hr>
+<h2 id="六、封装"><a href="#六、封装" class="headerlink" title="六、封装"></a>六、封装</h2><h4 id="1-封装的几个层次"><a href="#1-封装的几个层次" class="headerlink" title="1.封装的几个层次"></a>1.封装的几个层次</h4><ol>
+<li>public：公共权限的访问控制</li>
+<li>internal：包内访问级别</li>
+<li>private：类内部的私有成员</li>
+<li>protected：控制的是子类访问父类成员，不属于以上级别的层次</li>
+<li>除了上述四种，还有namespace可以自定义的命名空间</li>
+</ol>
+<h4 id="2-如何导入package"><a href="#2-如何导入package" class="headerlink" title="2.如何导入package"></a>2.如何导入package</h4><ul>
+<li>按Ctrl+U组合键，打开preferences面板，选择”ActionScript3 Settings”，可以添加原路径（ActionScript文件夹），库路径，外部库路径。</li>
+</ul>
+<h4 id="3-getter和setter方法"><a href="#3-getter和setter方法" class="headerlink" title="3.getter和setter方法"></a>3.getter和setter方法</h4><ul>
+<li><p>getter方法：比如要有返回类型，且应和要和访问的私有属性一致。必须有返回值，返回要访问的私有属性。格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">访问控制符 function get 方法名():返回类型&#123;</span><br><span class="line">  其他代码.....</span><br><span class="line">  return 要访问的私有属性</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>setter方法：一定要有参数，且参数类型应当和要访问的私有属性类型一致。返回类型为void。应当有赋值语句。格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">访问控制符 function set 方法名(参数：参数类型):void&#123;</span><br><span class="line">  其他代码.....</span><br><span class="line">  要访问的私有属性 = 参数;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="4-包外类"><a href="#4-包外类" class="headerlink" title="4.包外类"></a>4.包外类</h4><ul>
+<li>在package{}之外还可以定义多个类，这些类与文件名不同，并且只有当前类中的成员类可以访问。</li>
+<li>为什么需要包外类？<ol>
+<li>我们可以将包外类当做当前类文件的“私有类”。</li>
+<li>由于包外类对外部完全不可见，要想实现单例模式，就可以用上包外类。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="七、-命名空间"><a href="#七、-命名空间" class="headerlink" title="七、*命名空间"></a>七、*命名空间</h2><h4 id="1-第一个例子"><a href="#1-第一个例子" class="headerlink" title="1.第一个例子"></a>1.第一个例子</h4><ul>
+<li>两个da()在不同的命名空间下有不同的实现。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"> package com.example.test.namespaces</span><br><span class="line">&#123;</span><br><span class="line">	import flash.display.Sprite;</span><br><span class="line"></span><br><span class="line">	public class SamplePlayer extends Sprite</span><br><span class="line">	&#123;</span><br><span class="line">		public function SamplePlayer()</span><br><span class="line">		&#123;</span><br><span class="line">			use namespace ball;</span><br><span class="line">			var foo:Player = new Player();</span><br><span class="line">			foo.da();</span><br><span class="line">			foo.phone::da();</span><br><span class="line">			foo.ball::da();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">namespace phone;</span><br><span class="line">namespace ball;</span><br><span class="line">class Player</span><br><span class="line">&#123;</span><br><span class="line">	phone function da()&#123;</span><br><span class="line">		trace (&quot;打（）：电话&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	ball function da()&#123;</span><br><span class="line">		trace (&quot;打（）：球&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="2-命名空间的流程"><a href="#2-命名空间的流程" class="headerlink" title="2.命名空间的流程"></a>2.命名空间的流程</h4><ul>
+<li>定义命名空间<ul>
+<li><code>访问控制   namespace  空间名称;</code></li>
+</ul>
+</li>
+<li>命名空间应用于实例成员<ul>
+<li><code>空间名称 属性:数据类型;</code></li>
+<li><code>命名空间 方法(参数):返回值类型;</code></li>
+</ul>
+</li>
+<li>命名空间应用于静态成员<ul>
+<li><code>空间名称 static 属性:数据类型;</code></li>
+<li><code>命名空间 static 方法(参数):返回值类型;</code></li>
+</ul>
+</li>
+<li>use 使用格式<ul>
+<li><code>use namespace 空间名称;</code></li>
+</ul>
+</li>
+<li>命名限定符直接指定命名空间<ul>
+<li><code>对象.命名空间::实例属性;</code></li>
+<li><code>对象.命名空间::实例方法(参数...);</code></li>
+</ul>
+</li>
+<li>命名限定符直接指定命名空间(静态)<ul>
+<li><code>对象.命名空间::静态属性;</code></li>
+<li><code>对象.命名空间::静态方法(参数...);</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="3-如何引用命名空间"><a href="#3-如何引用命名空间" class="headerlink" title="3.如何引用命名空间"></a>3.如何引用命名空间</h4><ul>
+<li>use namespace 编译时会被提到前端先执行，所以同时打开两个时，如果两个有相同的方法会产生冲突。</li>
+<li>use namespace 不会受到上下文逻辑影响，一样会被提前报错。</li>
+</ul>
+<hr>
+<h2 id="八、复合与继承"><a href="#八、复合与继承" class="headerlink" title="八、复合与继承"></a>八、复合与继承</h2><h4 id="1-复合"><a href="#1-复合" class="headerlink" title="1.复合"></a>1.复合</h4><ul>
+<li>如果想在复合类对象构造函数被调用之前就创建被复合的对象，使用定义属性时就初始化符合对象。</li>
+<li>在构造函数初始化，尽量抽离初始化语句到一个单独的方法。</li>
+</ul>
+<h4 id="2-继承"><a href="#2-继承" class="headerlink" title="2.继承"></a>2.继承</h4><ul>
+<li>子类可以继承父类中的所有的public，protected属性和方法，父类的静态成员不能继承，但是可以直接访问</li>
+<li>public和internal的类成员都会被子类继承。</li>
+<li>final和private不能被重写，重写实例方法。<ol>
+<li>必须用override关键字在行首标明这是重写</li>
+<li>子类中被重写的方法要和父类的方法有同样的访问控制、同样的参数数目和参数类型、同样的返回值类型。</li>
+<li>不能在子类中改变父类实例属性的类型，确保强制转换始终有效。</li>
+</ol>
+</li>
+<li>父类的自定义命名空间成员可以被子类继承。使用子类对象访问该自定义命名空间成员的方法，和使用父类对象一样，引用命名空间，然后就可以访问到成员。引用命名空间，可以使用use namespace 或者命名空间限定符来访问。</li>
+</ul>
+<hr>
+<h2 id="九、多态"><a href="#九、多态" class="headerlink" title="九、多态"></a>九、多态</h2><h4 id="1-里氏代换原则"><a href="#1-里氏代换原则" class="headerlink" title="1.里氏代换原则"></a>1.里氏代换原则</h4><ul>
+<li>在一个程序中，将所有类型为A的对象，都换成类型为B的对象，而程序的行为没有变化，那么类型B是类型A的子类型。这里的类型不仅仅指类，也包括接口。</li>
+</ul>
+<h4 id="2-向上转换和向下转换"><a href="#2-向上转换和向下转换" class="headerlink" title="2.向上转换和向下转换"></a>2.向上转换和向下转换</h4><ul>
+<li>向上转换，是将子类的对象当成父类的对象来使用    </li>
+<li>向下转换，当一个子类对象以父类数据类型使用时，可以将它再还原成子类对象   </li>
+<li>判断方法<br>  <code>父类类型对象 as 子类类型       //使用as</code><br>  <code>子类构造函数(父类类型对象)       //使用显示强行转换</code><br>  将父类对象转换成子类对象，结果失败。使用as,返回空对象null;<br>  使用显示强行转换，则抛出异常。   </li>
+</ul>
+<hr>
+<h2 id="十、抽象类和接口"><a href="#十、抽象类和接口" class="headerlink" title="十、抽象类和接口"></a>十、抽象类和接口</h2><h4 id="1-抽象方法"><a href="#1-抽象方法" class="headerlink" title="1.抽象方法"></a>1.抽象方法</h4><ul>
+<li>实现原理  <ol>
+<li>定义一个类，在此类中的构造函数和抽象函数中定义一个抛出异常AbstractError对象。</li>
+<li>如果子类不去重写这个抽象类方法，直接调用，那么就会触发这个异常。</li>
+</ol>
+</li>
+</ul>
+<h4 id="2-接口"><a href="#2-接口" class="headerlink" title="2.接口"></a>2.接口</h4><ul>
+<li><p>创建接口</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package 包路径&#123;</span><br><span class="line">  访问控制 interface 接口名称&#123;</span><br><span class="line">    function 方法名(参数:参数类型):返回类型;</span><br><span class="line">    static function 方法名(参数:参数类型):返回类型;</span><br><span class="line">    function get 方法名()：返回类型;</span><br><span class="line">    function set 方法名(参数:参数类型)：void;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意</p>
+<ol>
+<li>接口也有访问属性控制，默认是internal</li>
+<li>接口如果需要公开，需要将访问设置设置为public</li>
+<li>接口只定义方法，不定义属性</li>
+<li>定义的方法不可以加访问控制符，都是public型</li>
+<li>定义的方法没有任何实现，直接以“;”结尾</li>
+<li>一般将接口名称以大写字母I开头</li>
+</ol>
+</li>
+<li><p>接口的继承:接口及所有父接口中的方法定义不能冲突，即不能出现同名的方法。</p>
+</li>
+<li>标识接口：当需要将方法完全不同的几个类看成一个类型时，可以使用。</li>
+<li>抽象类和接口的区别<ol>
+<li>接口不是类，抽象类时类。</li>
+<li>抽象类只能单继承，接口则rang同一个类实现多个接口</li>
+</ol>
+</li>
+<li>什么时候接口，什么时候用抽象类<ol>
+<li>单纯地给己有地具体类添加新的抽象类型,那么优先考虑接口。</li>
+<li>需要给己有的具体类和将要设计的具体类中的共同代码集中管理，优先使用抽象类。</li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/07/Flash ActionScript3/" data-id="cjavyr2qw000010tq4nok79wc" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/07/hello-world/" class="article-date">
+  <time datetime="2017-12-07T03:52:20.423Z" itemprop="datePublished">2017-12-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/07/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/07/hello-world/" data-id="cjavyr2r5000110tquohhpwf1" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/12/07/Flash ActionScript3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/07/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
